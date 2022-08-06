@@ -9,21 +9,20 @@ var (
 // BoardSquareNumber int    = 120
 )
 
-// WP = white pawn, WN = white kinght, ...
 const (
 	Empty int = iota
-	WP
-	WN
-	WB
-	WR
-	WQ
-	WK
-	BP
-	BN
-	BB
-	BR
-	BQ
-	BK
+	WhitePawn
+	WhiteKnight
+	WhiteBishop
+	WhileRook
+	WhiteQueen
+	WhiteKing
+	BlackPawn
+	BlackKnight
+	BlackBishop
+	BlackRook
+	BlackQueen
+	BlackKing
 )
 
 func main() {
