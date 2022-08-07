@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var (
 	Square120To64 [BoardSquareNumber]int
 	Square64To120 [64]int
@@ -14,8 +12,10 @@ func FileRank2Square(file int, rank int) int {
 
 func initSquare120to64() {
 	var index int
+
 	var file = FileA
 	var rank = Rank1
+
 	var square int = A1
 	var square64 int
 
@@ -39,6 +39,6 @@ func initSquare120to64() {
 
 func allInit() {
 
-	fmt.Println("allInit()")
+	initSquare120to64()
 
 }
