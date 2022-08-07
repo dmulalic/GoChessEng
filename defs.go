@@ -129,6 +129,13 @@ const (
 	NoSquare
 )
 
+const (
+	WhiteKingCastle  int = 1
+	WhiteQueenCastle int = 2
+	BlackKingCastle  int = 4
+	BlackQueenCastle int = 8
+)
+
 type Board struct {
 	pieces []int
 	pawns  []uint64
@@ -145,8 +152,9 @@ type Board struct {
 	positionKey uint64
 
 	pieceNumber []int
-	bigPiece    []int // Everything that is not a pawn
+	bigPiece    []int // Everything but pPwns
 	minorPiece  []int // Knights and Bishops
 	majorPiece  []int // Rooks and Queen
 
+	castlePerm int
 }

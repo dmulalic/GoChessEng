@@ -1,2 +1,4 @@
 # GoChessEng
-Go Chess Engine
+
+GoChessEng is a chess engine written in Go.
+
