@@ -1,10 +1,16 @@
 package main
 
+const (
+	BoardSquareNumber int = 120
+	MaxGameMoves      int = 4096
+)
+
 var (
 	Name    string = "GoChessEng"
 	Version string = "0.0.1-alpha.1"
-	// BoardSquareNumber int    = 120
-	// MaxGameMoves int = 4096
+
+	Square120To64 [BoardSquareNumber]int
+	Square64To120 [64]int
 )
 
 const (
@@ -166,5 +172,5 @@ type Board struct {
 
 	castlePerm int
 
-	history []Undo
+	history [MaxGameMoves]Undo
 }

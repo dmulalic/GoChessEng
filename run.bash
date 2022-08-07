@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-go run defs.go main.go
+go run init.go defs.go main.go
