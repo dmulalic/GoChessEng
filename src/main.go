@@ -58,6 +58,8 @@ const (
 	F1
 	G1
 	H1
+)
+const (
 	A2 int = iota + 31
 	B2
 	C2
@@ -66,6 +68,8 @@ const (
 	F2
 	G2
 	H2
+)
+const (
 	A3 int = iota + 41
 	B3
 	C3
@@ -74,6 +78,8 @@ const (
 	F3
 	G3
 	H3
+)
+const (
 	A4 int = iota + 51
 	B4
 	C4
@@ -82,6 +88,8 @@ const (
 	F4
 	G4
 	H4
+)
+const (
 	A5 int = iota + 61
 	B5
 	C5
@@ -90,6 +98,8 @@ const (
 	F5
 	G5
 	H5
+)
+const (
 	A6 int = iota + 71
 	B6
 	C6
@@ -98,6 +108,8 @@ const (
 	F6
 	G6
 	H6
+)
+const (
 	A7 int = iota + 81
 	B7
 	C7
@@ -106,6 +118,8 @@ const (
 	F7
 	G7
 	H7
+)
+const (
 	A8 int = iota + 91
 	B8
 	C8
@@ -115,6 +129,7 @@ const (
 	G8
 	H8
 )
+
 func main() {
 	fmt.Printf("%v version %v\n", Name, Version)
 	fmt.Println("MIT license")
