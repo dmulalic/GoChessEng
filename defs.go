@@ -4,6 +4,7 @@ var (
 	Name    string = "GoChessEng"
 	Version string = "0.0.1-alpha.1"
 	// BoardSquareNumber int    = 120
+	// MaxGameMoves int = 4096
 )
 
 const (
@@ -136,6 +137,13 @@ const (
 	BlackQueenCastle int = 8
 )
 
+type Undo struct {
+	move        int
+	castlePerm  int
+	fiftyMove   int
+	positionKey uint64
+}
+
 type Board struct {
 	pieces []int
 	pawns  []uint64
@@ -157,4 +165,6 @@ type Board struct {
 	majorPiece  []int // Rooks and Queen
 
 	castlePerm int
+
+	history []Undo
 }
