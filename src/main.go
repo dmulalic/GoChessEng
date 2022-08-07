@@ -128,6 +128,7 @@ const (
 	F8
 	G8
 	H8
+	NoSquare
 )
 
 func main() {
