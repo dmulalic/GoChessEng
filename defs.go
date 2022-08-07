@@ -8,9 +8,6 @@ const (
 var (
 	Name    string = "GoChessEng"
 	Version string = "0.0.1-alpha.1"
-
-	Square120To64 [BoardSquareNumber]int
-	Square64To120 [64]int
 )
 
 const (
