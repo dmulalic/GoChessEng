@@ -131,6 +131,10 @@ const (
 	NoSquare
 )
 
+type Board struct {
+	Pieces []int
+}
+
 func main() {
 	fmt.Printf("%v version %v\n", Name, Version)
 	fmt.Println("MIT license")
