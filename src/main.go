@@ -4,7 +4,7 @@ import "fmt"
 
 var (
 	Name    string = "GoChessEng"
-	Version string = "0.0.1"
+	Version string = "0.0.1-alpha.1"
 
 // BoardSquareNumber int    = 120
 )
